@@ -11,8 +11,8 @@ import { newViewTypes } from "./types/views.js";
 
 export const canvasUI = {
   ui: {
-    newUI(canvas, layout) {
-      return new UI(canvas, layout);
+    newUI(uiContainer) {
+      return new UI(uiContainer);
     },
   },
   layouts: {
