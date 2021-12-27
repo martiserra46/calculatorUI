@@ -79,6 +79,7 @@ calculatorUI.equalsButton.addListener(
           const next = operation[i + 1];
           const result = compute(operator, prev, next);
           operation.splice(i - 1, 3, result);
+          i--;
         }
       }
     }
